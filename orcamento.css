@@ -1,0 +1,2157 @@
+/* ========================================
+   PÁGINA DE SERVIÇOS
+   ARTE E FLORES PAISAGISMO
+======================================== */
+
+
+/* ========================================
+   BASE DA PÁGINA
+======================================== */
+
+.pagina-servicos {
+    background-color: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+/* ========================================
+   BOTÃO VOLTAR
+======================================== */
+
+.pagina-servicos .voltar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 7% 0;
+}
+
+.pagina-servicos .botao-voltar {
+    display: inline-block;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: #a8d89e;
+
+    transition: 0.3s;
+}
+
+.pagina-servicos .botao-voltar:hover {
+    color: #d4efcd;
+
+    text-shadow:
+        0 0 10px rgba(168, 216, 158, 0.6);
+
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   HERO — TÍTULO DA PÁGINA
+======================================== */
+
+.servicos-hero {
+    position: relative;
+
+    padding: 80px 25px 65px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* detalhes decorativos laterais */
+
+.servicos-hero::before,
+.servicos-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 360px;
+
+    border: 1px solid rgba(168, 216, 158, 0.07);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.servicos-hero::before {
+    left: -160px;
+    top: 10px;
+
+    transform: rotate(25deg);
+}
+
+.servicos-hero::after {
+    right: -160px;
+    top: 10px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* pequeno texto superior */
+
+.servicos-hero-label {
+    margin-bottom: 18px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 7px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.45);
+}
+
+
+/* título principal */
+
+.servicos-hero h1 {
+    margin-bottom: 20px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 68px;
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    letter-spacing: 2px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 15px rgba(255, 255, 255, 0.12),
+        0 0 35px rgba(168, 216, 158, 0.13);
+}
+
+
+/* ========================================
+   ORNAMENTO
+======================================== */
+
+.servicos-ornamento {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.servicos-ornamento::before,
+.servicos-ornamento::after {
+    content: "";
+
+    width: 60px;
+    height: 1px;
+
+    background-color: #607d56;
+
+    box-shadow:
+        0 0 6px rgba(168, 216, 158, 0.25);
+}
+
+.servicos-ornamento span {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 10px rgba(168, 216, 158, 0.45);
+}
+
+
+/* descrição */
+
+.servicos-hero > p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #b9c1b7;
+}
+
+
+/* ========================================
+   IMAGEM PRINCIPAL
+======================================== */
+
+.servicos-imagem-principal {
+    width: 100%;
+
+    max-width: 1200px;
+
+    height: 420px;
+
+    margin: 0 auto 100px;
+
+    padding: 0 7%;
+}
+
+.servicos-imagem-principal img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border: 1px solid #526d4b;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 25px rgba(168, 216, 158, 0.08),
+        0 0 60px rgba(168, 216, 158, 0.03);
+}
+
+
+/* ========================================
+   INTRODUÇÃO
+======================================== */
+
+.servicos-introducao {
+    max-width: 780px;
+
+    margin: 0 auto 70px;
+
+    padding: 0 25px;
+
+    text-align: center;
+}
+
+.servicos-introducao-label {
+    margin-bottom: 15px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.35);
+}
+
+.servicos-introducao h2 {
+    margin-bottom: 20px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    color: #ffffff;
+}
+
+.servicos-introducao p:last-child {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #9da69d;
+}
+
+
+/* ========================================
+   LISTA DE SERVIÇOS
+======================================== */
+
+.lista-servicos-nova {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 7% 100px;
+}
+
+.lista-servicos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.servico-card-novo {
+    position: relative;
+
+    min-height: 405px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background-color: #090b09;
+
+    border: 1px solid #283827;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* linha verde no topo */
+
+.servico-card-novo::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #a8d89e;
+
+    box-shadow:
+        0 0 10px rgba(168, 216, 158, 0.6);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: 0.4s;
+
+    z-index: 3;
+}
+
+.servico-card-novo:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* efeito do card */
+
+.servico-card-novo:hover {
+    transform: translateY(-8px);
+
+    border-color: #789c6c;
+
+    box-shadow:
+        0 0 25px rgba(168, 216, 158, 0.13),
+        0 0 50px rgba(168, 216, 158, 0.05);
+}
+
+
+/* ========================================
+   IMAGEM DO CARD
+======================================== */
+
+.servico-card-imagem {
+    width: 100%;
+
+    height: 215px;
+
+    overflow: hidden;
+
+    background-color: #101410;
+}
+
+.servico-card-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+.servico-card-novo:hover .servico-card-imagem img {
+    transform: scale(1.07);
+
+    filter: brightness(1.08);
+}
+
+
+/* ========================================
+   CONTEÚDO DO CARD
+======================================== */
+
+.servico-card-conteudo-novo {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 25px 24px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #090b09 0%,
+            #070807 100%
+        );
+}
+
+
+/* categoria */
+
+.servico-card-label {
+    margin-bottom: 9px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #91bd82;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.3);
+}
+
+
+/* título */
+
+.servico-card-conteudo-novo h2 {
+    margin-bottom: 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+
+/* descrição */
+
+.servico-card-conteudo-novo p {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    color: #858e85;
+}
+
+
+/* ========================================
+   CONHECER SERVIÇO
+======================================== */
+
+.conhecer-servico {
+    display: block;
+
+    margin-top: auto;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.25);
+
+    transition: 0.3s;
+}
+
+.servico-card-novo:hover .conhecer-servico {
+    color: #d5efce;
+
+    text-shadow:
+        0 0 12px rgba(168, 216, 158, 0.65);
+
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   FAIXA DE IMAGEM
+======================================== */
+
+.servicos-faixa-imagem {
+    width: 100%;
+
+    height: 240px;
+
+    margin-bottom: 100px;
+
+    overflow: hidden;
+
+    border-top: 1px solid #31472e;
+    border-bottom: 1px solid #31472e;
+}
+
+.servicos-faixa-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    opacity: 0.72;
+
+    transition:
+        transform 1s ease,
+        opacity 0.5s ease;
+}
+
+.servicos-faixa-imagem:hover img {
+    transform: scale(1.04);
+
+    opacity: 0.85;
+}
+
+
+/* ========================================
+   CHAMADA FINAL
+======================================== */
+
+.servicos-final {
+    max-width: 1200px;
+
+    margin: 0 auto 90px;
+
+    padding: 0 7%;
+}
+
+.servicos-final-conteudo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 35px 45px;
+
+    background-color: #080a08;
+
+    border: 1px solid #405b39;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 25px rgba(168, 216, 158, 0.04);
+}
+
+
+/* lado esquerdo */
+
+.servicos-final-texto {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+/* ícone */
+
+.servicos-final-icone {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1px solid #5e8554;
+
+    border-radius: 50%;
+
+    color: #a8d89e;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 0 15px rgba(168, 216, 158, 0.08);
+}
+
+
+/* título */
+
+.servicos-final-texto h2 {
+    margin-bottom: 6px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 26px;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+
+/* descrição */
+
+.servicos-final-texto p {
+    font-size: 14px;
+
+    color: #858e85;
+}
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .servicos-hero h1 {
+        font-size: 56px;
+    }
+
+    .lista-servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicos-imagem-principal {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .pagina-servicos .voltar-container {
+        padding: 25px 25px 0;
+    }
+
+
+    .servicos-hero {
+        padding: 60px 25px 50px;
+    }
+
+
+    .servicos-hero-label {
+        font-size: 10px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .servicos-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .servicos-hero > p:last-child {
+        font-size: 16px;
+    }
+
+
+    .servicos-imagem-principal {
+        height: 270px;
+
+        padding: 0 25px;
+
+        margin-bottom: 70px;
+    }
+
+
+    .servicos-introducao {
+        margin-bottom: 50px;
+    }
+
+
+    .servicos-introducao h2 {
+        font-size: 30px;
+    }
+
+
+    .servicos-introducao p:last-child {
+        font-size: 15px;
+    }
+
+
+    .lista-servicos-nova {
+        padding: 0 25px 70px;
+    }
+
+
+    .lista-servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .servico-card-novo {
+        min-height: 380px;
+    }
+
+
+    .servico-card-imagem {
+        height: 220px;
+    }
+
+
+    .servico-card-conteudo-novo h2 {
+        font-size: 23px;
+    }
+
+
+    .conhecer-servico {
+        font-size: 13px;
+    }
+
+
+    .servicos-faixa-imagem {
+        height: 180px;
+
+        margin-bottom: 70px;
+    }
+
+
+    .servicos-final {
+        padding: 0 25px;
+
+        margin-bottom: 60px;
+    }
+
+
+    .servicos-final-conteudo {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 30px;
+    }
+
+
+    .servicos-final-texto {
+        align-items: flex-start;
+    }
+
+
+    .servicos-final .botao {
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+/* ========================================
+   PÁGINA INDIVIDUAL — MANUTENÇÃO DE JARDINS
+======================================== */
+
+
+/* ========================================
+   BANNER DO SERVIÇO
+======================================== */
+
+.servico-pagina {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("imagens/servico-manutencao.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.servico-pagina-conteudo {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.servico-label {
+    margin: 0 0 18px;
+
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    color: #a8d89e;
+}
+
+.servico-pagina h1 {
+    margin: 0 0 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 56px;
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.servico-introducao {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #d0d6d0;
+}
+
+
+/* ========================================
+   BOTÃO VOLTAR
+======================================== */
+
+.voltar-container {
+    padding: 25px 7%;
+
+    background-color: #030403;
+}
+
+.botao-voltar {
+    display: inline-block;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    text-decoration: none;
+
+    color: #8f988f;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.botao-voltar:hover {
+    color: #a8d89e;
+
+    transform: translateX(-4px);
+}
+
+
+/* ========================================
+   SEÇÃO — O QUE FAZEMOS
+======================================== */
+
+.servico-descricao {
+    padding: 110px 7%;
+
+    background-color: #030403;
+}
+
+.servico-descricao-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+.servico-descricao-texto {
+    width: 100%;
+}
+
+.servico-descricao-texto > .servico-label {
+    text-align: center;
+}
+
+.servico-descricao-texto > h2 {
+    margin: 10px 0 18px;
+
+    text-align: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.servico-descricao-intro {
+    max-width: 650px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #8f988f;
+}
+
+
+/* ========================================
+   CARDS DOS CUIDADOS
+======================================== */
+
+.servico-lista {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.servico-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background-color: #080a08;
+
+    border: 1px solid #1b241b;
+
+    border-left: 2px solid #405b39;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.servico-item:hover {
+    transform: translateY(-4px);
+
+    border-color: #526d4b;
+
+    border-left-color: #a8d89e;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(168, 216, 158, 0.05);
+}
+
+
+/* ========================================
+   ÍCONES DOS CARDS
+======================================== */
+
+.servico-item-icone {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0c110c;
+
+    border: 1px solid #405b39;
+
+    border-radius: 50%;
+
+    font-size: 21px;
+
+    box-shadow:
+        0 0 15px rgba(168, 216, 158, 0.04);
+}
+
+.servico-item h3 {
+    margin: 0 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.servico-item p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #858e85;
+}
+
+
+/* ========================================
+   GALERIA — NOSSO TRABALHO
+======================================== */
+
+.servico-galeria {
+    padding: 110px 7%;
+
+    background-color: #050605;
+}
+
+.servico-galeria-cabecalho {
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.servico-galeria-cabecalho .servico-label {
+    margin-bottom: 18px;
+}
+
+.servico-galeria-cabecalho h2 {
+    margin: 0 0 18px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.servico-galeria-cabecalho p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #8f988f;
+}
+
+
+/* ========================================
+   GRID DA GALERIA
+======================================== */
+
+.servico-galeria-grid {
+    max-width: 1100px;
+
+    height: 420px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+.servico-foto {
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #0b0d0b;
+
+    border: 1px solid #1c271c;
+
+    cursor: pointer;
+}
+
+.servico-foto img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+.servico-foto:hover img {
+    transform: scale(1.06);
+
+    filter:
+        brightness(0.85)
+        saturate(1.08);
+}
+
+.servico-foto::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border: 1px solid transparent;
+
+    transition:
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+
+    pointer-events: none;
+}
+
+.servico-foto:hover::after {
+    border-color: rgba(168, 216, 158, 0.45);
+
+    box-shadow:
+        inset 0 0 35px rgba(168, 216, 158, 0.08);
+}
+
+
+/* ========================================
+   FRASE DE DESTAQUE
+======================================== */
+
+.servico-destaque {
+    padding: 110px 7%;
+
+    background-color: #080a08;
+
+    border-top: 1px solid #182018;
+
+    border-bottom: 1px solid #182018;
+
+    text-align: center;
+}
+
+.servico-destaque-conteudo {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.servico-destaque-conteudo span {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-size: 34px;
+
+    opacity: 0.9;
+}
+
+.servico-destaque-conteudo h2 {
+    margin: 0 0 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+
+    line-height: 1.35;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.servico-destaque-conteudo p {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #8f988f;
+}
+
+
+/* ========================================
+   ORÇAMENTO
+======================================== */
+
+.orcamento {
+    padding: 110px 7%;
+
+    background-color: #030403;
+
+    border-top: 1px solid #182018;
+}
+
+.orcamento-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.orcamento-container > .servico-label {
+    margin-bottom: 18px;
+
+    text-align: center;
+}
+
+.orcamento-container > h2 {
+    margin: 0 0 18px;
+
+    text-align: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    color: #ffffff;
+}
+
+.orcamento-container > p:not(.servico-label) {
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #8f988f;
+}
+
+
+/* ========================================
+   OPÇÕES DE SERVIÇO
+======================================== */
+
+.orcamento-servicos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+}
+
+.opcao-servico {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 58px;
+
+    padding: 15px 18px;
+
+    background-color: #080a08;
+
+    border: 1px solid #263226;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.opcao-servico:hover {
+    background-color: #0c110c;
+
+    border-color: #526d4b;
+
+    box-shadow:
+        0 0 18px rgba(168, 216, 158, 0.06);
+}
+
+.opcao-servico input {
+    width: 17px;
+    height: 17px;
+
+    margin: 0;
+
+    accent-color: #a8d89e;
+
+    cursor: pointer;
+}
+
+.opcao-servico span {
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    color: #c6cec5;
+}
+
+
+/* ========================================
+   CAMPOS DO ORÇAMENTO
+======================================== */
+
+.orcamento-dados {
+    display: grid;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.orcamento-dados label {
+    margin-top: 8px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #a8d89e;
+}
+
+.orcamento-dados input,
+.orcamento-dados textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 16px 18px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    color: #ffffff;
+
+    background-color: #080a08;
+
+    border: 1px solid #293629;
+
+    border-radius: 4px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.orcamento-dados input {
+    height: 52px;
+}
+
+.orcamento-dados textarea {
+    min-height: 150px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+.orcamento-dados input::placeholder,
+.orcamento-dados textarea::placeholder {
+    color: #687168;
+}
+
+.orcamento-dados input:focus,
+.orcamento-dados textarea:focus {
+    background-color: #0b0e0b;
+
+    border-color: #789c6c;
+
+    box-shadow:
+        0 0 0 2px rgba(168, 216, 158, 0.06),
+        0 0 20px rgba(168, 216, 158, 0.05);
+}
+
+
+/* ========================================
+   BOTÃO DO ORÇAMENTO
+======================================== */
+
+#botao-whatsapp {
+    display: block;
+
+    width: 100%;
+
+    min-height: 56px;
+
+    margin-top: 10px;
+
+    border: 1px solid #a8d89e;
+
+    cursor: pointer;
+
+    letter-spacing: 2px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+#botao-whatsapp:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(168, 216, 158, 0.18),
+        0 0 40px rgba(168, 216, 158, 0.06);
+}
+
+
+/* ========================================
+   RESPONSIVO — TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .servico-pagina {
+        min-height: 520px;
+
+        padding: 80px 5%;
+    }
+
+    .servico-pagina h1 {
+        font-size: 44px;
+    }
+
+    .servico-galeria {
+        padding: 80px 5%;
+    }
+
+    .servico-galeria-cabecalho h2 {
+        font-size: 36px;
+    }
+
+    .servico-galeria-grid {
+        height: 550px;
+
+        grid-template-columns: 1.4fr 1fr;
+    }
+
+    .servico-descricao {
+        padding: 80px 5%;
+    }
+
+    .servico-descricao-texto > h2 {
+        font-size: 36px;
+    }
+
+    .servico-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .servico-destaque {
+        padding: 80px 5%;
+    }
+
+    .servico-destaque-conteudo h2 {
+        font-size: 34px;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVO — CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    .voltar-container {
+        padding: 20px 5%;
+    }
+
+    .servico-pagina {
+        min-height: 500px;
+
+        padding: 70px 5%;
+    }
+
+    .servico-pagina h1 {
+        font-size: 34px;
+    }
+
+    .servico-introducao {
+        font-size: 15px;
+    }
+
+
+    /* DESCRIÇÃO */
+
+    .servico-descricao {
+        padding: 65px 5%;
+    }
+
+    .servico-descricao-texto > h2 {
+        font-size: 30px;
+    }
+
+    .servico-descricao-intro {
+        font-size: 14px;
+
+        margin-bottom: 35px;
+    }
+
+
+    /* CARDS */
+
+    .servico-lista {
+        gap: 12px;
+    }
+
+    .servico-item {
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .servico-item-icone {
+        width: 42px;
+        height: 42px;
+
+        font-size: 18px;
+    }
+
+    .servico-item h3 {
+        font-size: 16px;
+    }
+
+    .servico-item p {
+        font-size: 13px;
+    }
+
+
+    /* GALERIA */
+
+    .servico-galeria {
+        padding: 65px 5%;
+    }
+
+    .servico-galeria-cabecalho h2 {
+        font-size: 30px;
+    }
+
+    .servico-galeria-cabecalho p:last-child {
+        font-size: 14px;
+    }
+
+    .servico-galeria-grid {
+        height: auto;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            300px
+            200px
+            200px;
+
+        gap: 12px;
+    }
+
+    .servico-foto-grande {
+        grid-row: auto;
+    }
+
+
+    /* DESTAQUE */
+
+    .servico-destaque {
+        padding: 70px 5%;
+    }
+
+    .servico-destaque-conteudo span {
+        font-size: 28px;
+    }
+
+    .servico-destaque-conteudo h2 {
+        font-size: 28px;
+    }
+
+    .servico-destaque-conteudo p {
+        font-size: 14px;
+    }
+
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    padding: 50px 7%;
+    background-color: #020302;
+    border-top: 1px solid #182018;
+}
+
+.footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.footer-marca h3 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.footer-marca span {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    color: #718d69;
+}
+
+.footer-instagram {
+    text-align: center;
+}
+
+.footer-instagram p {
+    margin: 0 0 10px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #687168;
+}
+
+.footer-instagram a {
+    font-size: 14px;
+
+    color: #a8d89e;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer-instagram a:hover {
+    color: #ffffff;
+}
+
+.footer-info {
+    text-align: right;
+}
+
+.footer-info p {
+    margin: 5px 0;
+
+    font-size: 12px;
+
+    color: #687168;
+}
+
+
+/* ========================================
+   RODAPÉ — CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    footer {
+        padding: 40px 5%;
+    }
+
+    .footer-conteudo {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .footer-instagram {
+        text-align: center;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+}
+
+/* BANNER - PODA DE PLANTAS */
+
+.pagina-poda {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(3, 4, 3, 0.88),
+            rgba(3, 4, 3, 0.45)
+        ),
+        url("imagens/servico-podas.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ============================= */
+/* BANNER - ADUBAÇÃO */
+/* ============================= */
+
+.pagina-adubacao {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(3, 4, 3, 0.88),
+            rgba(3, 4, 3, 0.45)
+        ),
+        url("imagens/servico-adubacao.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.pagina-paisagismo {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(3, 4, 3, 0.88),
+            rgba(3, 4, 3, 0.45)
+        ),
+        url("imagens/servico-paisagismo.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.pagina-rocagem {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(3, 4, 3, 0.88),
+            rgba(3, 4, 3, 0.45)
+        ),
+        url("imagens/servico-rocagem.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.pagina-poda-arvores {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(3, 4, 3, 0.88),
+            rgba(3, 4, 3, 0.45)
+        ),
+        url("imagens/servico-poda-arvores.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.pagina-controle-pragas {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(3, 4, 3, 0.88),
+            rgba(3, 4, 3, 0.45)
+        ),
+        url("imagens/servico-controle-pragas.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* ========================================
+   LOGO DA EMPRESA
+======================================== */
+
+.logo {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 230px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 170px;
+        height: 60px;
+    }
+
+    .logo img {
+        width: 195px !important;
+    }
+}
+
+/* ========================================
+   HERO DAS PÁGINAS DE SERVIÇO
+======================================== */
+
+.servico-pagina {
+    width: 100%;
+}
+
+.plantas-hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 7% 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    box-sizing: border-box;
+}
+
+.plantas-hero-conteudo {
+    max-width: 560px;
+}
+
+.plantas-hero-conteudo .servico-label {
+    margin-bottom: 18px;
+}
+
+.plantas-hero h1 {
+    margin: 0 0 25px;
+    font-size: clamp(48px, 5vw, 78px);
+    line-height: 0.95;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.plantas-hero h1 span {
+    display: block;
+    color: #a8d89e;
+}
+
+.plantas-hero-conteudo > p:not(.servico-label) {
+    max-width: 500px;
+    margin: 0 0 35px;
+    color: #9aa399;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.plantas-hero-imagem {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border: 1px solid #263526;
+    background: #0b0d0b;
+}
+
+.plantas-hero-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.plantas-hero-imagem:hover img {
+    transform: scale(1.03);
+}
+
+
+@media (max-width: 800px) {
+
+    .plantas-hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 50px 6% 70px;
+    }
+
+    .plantas-hero-conteudo {
+        max-width: 100%;
+    }
+
+    .plantas-hero h1 {
+        font-size: clamp(44px, 10vw, 65px);
+    }
+
+    .plantas-hero-imagem {
+        height: 420px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .plantas-hero {
+        padding: 35px 5% 55px;
+        gap: 35px;
+    }
+
+    .plantas-hero h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .plantas-hero-conteudo > p:not(.servico-label) {
+        font-size: 14px;
+    }
+
+    .plantas-hero-imagem {
+        height: 330px;
+    }
+
+}
+
+.plantas-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 70px 7% 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    box-sizing: border-box;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/manutencao-logo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.plantas-hero-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 560px;
+}
+
+.plantas-hero-conteudo .servico-label {
+    margin-bottom: 18px;
+}
+
+.plantas-hero h1 {
+    margin: 0 0 25px;
+    font-size: clamp(48px, 5vw, 78px);
+    line-height: 0.95;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.plantas-hero h1 span {
+    display: block;
+    color: #a8d89e;
+}
+
+.plantas-hero-conteudo > p:not(.servico-label) {
+    max-width: 500px;
+    margin: 0 0 35px;
+    color: #d0d8d0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.plantas-hero-imagem {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border: 1px solid #263526;
+    background: #0b0d0b;
+}
+
+.plantas-hero-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.plantas-hero-imagem:hover img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 800px) {
+
+    .plantas-hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 7% 70px;
+    }
+
+    .plantas-hero-imagem {
+        height: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .plantas-hero {
+        padding: 45px 5% 60px;
+    }
+
+    .plantas-hero h1 {
+        font-size: 50px;
+    }
+
+    .plantas-hero-imagem {
+        height: 350px;
+    }
+}
+
+.hero-poda {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/poda-logo.jpg");
+}
+
+.hero-adubacao {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/adubacao-logo.jpg");
+}
+
+.hero-paisagismo {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/paisagismo-logo.jpg");
+}
+
+.hero-rocagem {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/rocagem-logo.jpg");
+}
+
+.hero-poda-arvores {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/poda-arvores-logo.jpg");
+}
+
+.hero-encomenda {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/planta-encomenda-logo.jpg");
+}

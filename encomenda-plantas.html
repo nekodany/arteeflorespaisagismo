@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encomenda de Plantas | Arte & Flores Paisagismo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="encomenda-plantas.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="encomenda-header">
+
+        <div class="encomenda-header-conteudo">
+
+            <a href="index.html" class="encomenda-logo">
+                <img src="imagens/logo.png" alt="Arte & Flores Paisagismo">
+            </a>
+
+            <a href="servicos.html" class="botao-voltar">
+                ← VOLTAR PARA SERVIÇOS
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="plantas-hero hero-encomenda">
+    <div class="plantas-hero-conteudo">
+
+        <p class="servico-label">
+            ARTE E FLORES PAISAGISMO
+        </p>
+
+        <h1>
+            Encomenda de
+            <span>Plantas</span>
+        </h1>
+
+        <p>
+            Encontre a planta ideal para seu espaço.
+            Faça sua encomenda e conte com a Arte & Flores
+            Paisagismo para cuidar de cada detalhe.
+        </p>
+
+        <a href="#formulario-encomenda" class="botao">
+            🌿 FAZER ENCOMENDA
+        </a>
+
+    </div>
+
+    <div class="plantas-hero-imagem">
+        <img
+            src="imagens/planta-encomenda-logo.jpg"
+            alt="Encomenda de plantas"
+        >
+    </div>
+</section>
+
+
+    <!-- COMO FUNCIONA -->
+
+    <section class="como-funciona">
+
+        <div class="secao-titulo">
+
+            <span>COMO FUNCIONA</span>
+
+            <h2>
+                SUA PLANTA DO JEITO QUE VOCÊ PROCURA
+            </h2>
+
+            <p>
+                Encomendar uma planta é simples.
+                Envie as informações e entraremos em contato
+                para confirmar disponibilidade e valores.
+            </p>
+
+        </div>
+
+
+        <div class="passos-encomenda">
+
+            <div class="passo-encomenda">
+
+                <div class="passo-numero">
+                    01
+                </div>
+
+                <div class="passo-conteudo">
+
+                    <h3>
+                        ESCOLHA A PLANTA
+                    </h3>
+
+                    <p>
+                        Informe qual espécie ou tipo de planta
+                        você está procurando.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="passo-encomenda">
+
+                <div class="passo-numero">
+                    02
+                </div>
+
+                <div class="passo-conteudo">
+
+                    <h3>
+                        ENVIE SUA SOLICITAÇÃO
+                    </h3>
+
+                    <p>
+                        Preencha o formulário com os detalhes
+                        da planta que deseja.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="passo-encomenda">
+
+                <div class="passo-numero">
+                    03
+                </div>
+
+                <div class="passo-conteudo">
+
+                    <h3>
+                        VERIFICAMOS A DISPONIBILIDADE
+                    </h3>
+
+                    <p>
+                        Vamos verificar a disponibilidade
+                        e informar o valor da encomenda.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="passo-encomenda">
+
+                <div class="passo-numero">
+                    04
+                </div>
+
+                <div class="passo-conteudo">
+
+                    <h3>
+                        COMBINAMOS A ENTREGA
+                    </h3>
+
+                    <p>
+                        Após a confirmação, combinaremos
+                        os detalhes da entrega.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORMULÁRIO -->
+
+    <section class="formulario-section" id="formulario-encomenda">
+
+        <div class="formulario-container">
+
+            <div class="formulario-titulo">
+
+                <span>SOLICITE SUA PLANTA</span>
+
+                <h2>
+                    FAÇA SUA ENCOMENDA
+                </h2>
+
+                <p>
+                    Preencha os campos abaixo e envie sua solicitação.
+                </p>
+
+            </div>
+
+
+            <form id="formulario-plantas">
+
+
+                <div class="campo-grupo">
+
+                    <label for="nome">
+                        NOME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo-grupo">
+
+                    <label for="whatsapp">
+                        WHATSAPP
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="whatsapp"
+                        name="whatsapp"
+                        placeholder="(43) 99999-9999"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo-grupo">
+
+                    <label for="planta">
+                        QUAL PLANTA VOCÊ PROCURA?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="planta"
+                        name="planta"
+                        placeholder="Ex.: Palmeira, Samambaia, Costela-de-Adão..."
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo-linha">
+
+                    <div class="campo-grupo">
+
+                        <label for="quantidade">
+                            QUANTIDADE
+                        </label>
+
+                        <input
+                            type="number"
+                            id="quantidade"
+                            name="quantidade"
+                            min="1"
+                            value="1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo-grupo">
+
+                        <label for="tamanho">
+                            TAMANHO DESEJADO
+                        </label>
+
+                        <select id="tamanho" name="tamanho">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="Pequeno">
+                                Pequeno
+                            </option>
+
+                            <option value="Médio">
+                                Médio
+                            </option>
+
+                            <option value="Grande">
+                                Grande
+                            </option>
+
+                            <option value="Não sei">
+                                Não sei
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="campo-grupo">
+
+                    <label for="entrega">
+                        LOCAL DE ENTREGA
+                    </label>
+
+                    <input
+                        type="text"
+                        id="entrega"
+                        name="entrega"
+                        placeholder="Bairro ou região"
+                    >
+
+                </div>
+
+
+                <div class="campo-grupo">
+
+                    <label for="observacoes">
+                        OBSERVAÇÕES
+                    </label>
+
+                    <textarea
+                        id="observacoes"
+                        name="observacoes"
+                        rows="5"
+                        placeholder="Conte algum detalhe importante sobre a planta que você procura..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="formulario-aviso">
+
+                    <span>🌿</span>
+
+                    <p>
+                        A disponibilidade e o valor da planta serão
+                        confirmados após o recebimento da solicitação.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="botao-enviar-encomenda"
+                >
+                    📲 ENVIAR ENCOMENDA
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="encomenda-footer">
+
+        <div class="footer-conteudo">
+
+            <img
+                src="imagens/logo.jpg"
+                alt="Arte & Flores Paisagismo"
+            >
+
+            <p>
+                Plantas, jardinagem e paisagismo para transformar
+                seus espaços.
+            </p>
+
+            <span>
+                Londrina - Paraná © 2026 Arte & Flores Paisagismo
+            </span>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

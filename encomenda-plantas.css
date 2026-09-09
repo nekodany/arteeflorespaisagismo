@@ -1,0 +1,596 @@
+/* =========================================
+   ENCOMENDA DE PLANTAS
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #050705;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.encomenda-header {
+    width: 100%;
+    background: #030403;
+    border-bottom: 1px solid #182218;
+}
+
+.encomenda-header-conteudo {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.encomenda-logo img {
+    display: block;
+    width: 300px;
+    height: auto;
+    max-height: 75px;
+    object-fit: contain;
+}
+
+
+/* =========================================
+   BOTÃO VOLTAR
+========================================= */
+
+.encomenda-header .botao-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 18px;
+    color: #a8d89e;
+    background: #080b08;
+    border: 1px solid #354633;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.encomenda-header .botao-voltar:hover {
+    color: #ffffff;
+    border-color: #a8d89e;
+    background: #101610;
+    box-shadow: 0 0 18px rgba(168, 216, 158, 0.14);
+    transform: translateX(-3px);
+}
+
+
+/* =========================================
+   HERO
+   MESMO ESTILO DA VENDA DE PLANTAS
+========================================= */
+
+.plantas-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 70px 7% 90px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero-encomenda {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 4, 0.97) 0%,
+            rgba(3, 7, 4, 0.88) 40%,
+            rgba(3, 7, 4, 0.55) 100%
+        ),
+        url("imagens/planta-encomenda-logo.jpg");
+}
+
+.plantas-hero-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 560px;
+}
+
+.plantas-hero-conteudo .servico-label {
+    margin-bottom: 18px;
+}
+
+.plantas-hero h1 {
+    margin: 0 0 25px;
+    font-size: clamp(48px, 5vw, 78px);
+    line-height: 0.95;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.plantas-hero h1 span {
+    display: block;
+    color: #a8d89e;
+}
+
+.plantas-hero-conteudo > p:not(.servico-label) {
+    max-width: 500px;
+    margin: 0 0 35px;
+    color: #d0d8d0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.plantas-hero-imagem {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border: 1px solid #263526;
+    background: #0b0d0b;
+}
+
+.plantas-hero-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.plantas-hero-imagem:hover img {
+    transform: scale(1.03);
+}
+
+.plantas-hero .botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================
+   COMO FUNCIONA
+========================================= */
+
+.como-funciona {
+    width: 100%;
+    padding: 90px 6%;
+    background: #080b08;
+    border-top: 1px solid #151d15;
+    border-bottom: 1px solid #151d15;
+}
+
+.secao-titulo {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.secao-titulo > span {
+    color: #7fa978;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.secao-titulo h2 {
+    margin: 15px 0 18px;
+    font-size: clamp(25px, 4vw, 38px);
+    letter-spacing: 1px;
+}
+
+.secao-titulo p {
+    margin: 0;
+    color: #7f877f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   PASSOS
+========================================= */
+
+.passos-encomenda {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.passo-encomenda {
+    min-height: 210px;
+    padding: 28px 22px;
+    background: #050705;
+    border: 1px solid #202a20;
+    transition: 0.3s ease;
+}
+
+.passo-encomenda:hover {
+    border-color: #708b68;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.passo-numero {
+    margin-bottom: 28px;
+    color: #9ed394;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.passo-conteudo h3 {
+    margin: 0 0 13px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.passo-conteudo p {
+    margin: 0;
+    color: #777f77;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.formulario-section {
+    width: 100%;
+    padding: 100px 6%;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(90, 130, 82, 0.08),
+            transparent 45%
+        ),
+        #050705;
+}
+
+.formulario-container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.formulario-titulo {
+    margin-bottom: 45px;
+}
+
+.formulario-titulo span {
+    color: #7fa978;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.formulario-titulo h2 {
+    margin: 14px 0 12px;
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: 1px;
+}
+
+.formulario-titulo p {
+    margin: 0;
+    color: #7d857d;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+#formulario-plantas {
+    width: 100%;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.campo-linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.campo-grupo label {
+    margin-bottom: 9px;
+    color: #a1aaa1;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.campo-grupo input,
+.campo-grupo select,
+.campo-grupo textarea {
+    width: 100%;
+    padding: 15px 16px;
+
+    color: #eeeeee;
+    background: #090c09;
+
+    border: 1px solid #283328;
+    border-radius: 2px;
+    outline: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.campo-grupo input::placeholder,
+.campo-grupo textarea::placeholder {
+    color: #4f574f;
+}
+
+.campo-grupo input:focus,
+.campo-grupo select:focus,
+.campo-grupo textarea:focus {
+    border-color: #8db384;
+    box-shadow: 0 0 14px rgba(141, 179, 132, 0.08);
+}
+
+.campo-grupo select {
+    cursor: pointer;
+}
+
+.campo-grupo textarea {
+    resize: vertical;
+    min-height: 130px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   AVISO
+========================================= */
+
+.formulario-aviso {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin: 10px 0 28px;
+    padding: 17px;
+
+    background: #090d09;
+    border-left: 2px solid #78966f;
+}
+
+.formulario-aviso span {
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.formulario-aviso p {
+    margin: 0;
+    color: #697169;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BOTÃO ENVIAR
+========================================= */
+
+.botao-enviar-encomenda {
+    width: 100%;
+    padding: 17px 25px;
+
+    color: #071007;
+    background: #9ed394;
+
+    border: 1px solid #9ed394;
+    border-radius: 0;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+.botao-enviar-encomenda:hover {
+    background: #c0e8b8;
+
+    box-shadow:
+        0 0 18px rgba(158, 211, 148, 0.25),
+        0 0 35px rgba(158, 211, 148, 0.08);
+
+    transform: translateY(-2px);
+}
+
+.botao-enviar-encomenda:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.encomenda-footer {
+    width: 100%;
+    padding: 55px 6% 35px;
+
+    background: #030403;
+    border-top: 1px solid #182218;
+
+    text-align: center;
+}
+
+.footer-conteudo {
+    max-width: 700px;
+    margin: auto;
+}
+
+.footer-conteudo img {
+    width: 130px;
+    height: auto;
+    margin-bottom: 18px;
+}
+
+.footer-conteudo p {
+    margin: 0 auto 25px;
+    max-width: 450px;
+
+    color: #606860;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.footer-conteudo span {
+    color: #414841;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .plantas-hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .plantas-hero-conteudo {
+        max-width: 700px;
+    }
+
+    .plantas-hero-imagem {
+        height: 420px;
+    }
+
+    .passos-encomenda {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .encomenda-header-conteudo {
+        padding: 15px 5%;
+    }
+
+    .encomenda-logo img {
+        width: 170px;
+        max-height: 65px;
+    }
+
+    .encomenda-header .botao-voltar {
+        padding: 10px 12px;
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+
+    .plantas-hero {
+        padding: 50px 5% 60px;
+        min-height: auto;
+    }
+
+    .plantas-hero h1 {
+        font-size: 50px;
+    }
+
+    .plantas-hero-conteudo > p:not(.servico-label) {
+        font-size: 13px;
+    }
+
+    .plantas-hero-imagem {
+        height: 350px;
+    }
+
+    .como-funciona {
+        padding: 70px 5%;
+    }
+
+    .passos-encomenda {
+        grid-template-columns: 1fr;
+    }
+
+    .passo-encomenda {
+        min-height: auto;
+    }
+
+    .formulario-section {
+        padding: 75px 5%;
+    }
+
+    .campo-linha {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .encomenda-header-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .encomenda-header .botao-voltar {
+        align-self: flex-start;
+    }
+
+    .encomenda-logo img {
+        width: 160px;
+    }
+
+    .plantas-hero h1 {
+        font-size: 42px;
+    }
+
+    .plantas-hero-imagem {
+        height: 280px;
+    }
+}

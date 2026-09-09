@@ -1,0 +1,1109 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+header {
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: #050505;
+
+    border-bottom: 1px solid #171b17;
+}
+
+
+/* LOGO TEMPORÁRIA */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.4);
+}
+
+.logo span {
+    margin-top: 3px;
+
+    font-size: 11px;
+    letter-spacing: 5px;
+
+    color: #8fb68a;
+
+    text-shadow:
+        0 0 8px rgba(143, 182, 138, 0.4);
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #d7ddd5;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 10px rgba(168, 216, 158, 0.5);
+}
+
+
+/* ========================================
+   BANNER
+======================================== */
+
+.banner {
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("imagens/jardim-banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banner-conteudo {
+    max-width: 900px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.subtitulo {
+    margin-bottom: 22px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 6px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.5);
+}
+
+
+.banner h2 {
+    margin-bottom: 25px;
+
+    font-size: 60px;
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.25),
+        0 0 30px rgba(168, 216, 158, 0.18);
+}
+
+
+.banner-conteudo > p:not(.subtitulo) {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #e0e5de;
+}
+
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.botao {
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    background-color: #a8d89e;
+    color: #071007;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    border: 1px solid #a8d89e;
+
+    box-shadow:
+        0 0 15px rgba(168, 216, 158, 0.2);
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #c8e8c0;
+
+    box-shadow:
+        0 0 20px rgba(168, 216, 158, 0.45);
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   TÍTULOS DAS SEÇÕES
+======================================== */
+
+.titulo-secao {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.titulo-secao > p {
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    color: #8fb68a;
+
+    text-shadow:
+        0 0 8px rgba(143, 182, 138, 0.35);
+}
+
+.titulo-secao h2 {
+    margin-bottom: 15px;
+
+    font-size: 40px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 15px rgba(168, 216, 158, 0.2);
+}
+
+.titulo-secao span {
+    font-size: 16px;
+
+    color: #9da69d;
+}
+
+
+/* ========================================
+   SERVIÇOS
+======================================== */
+
+.servicos {
+    padding: 110px 7%;
+
+    background-color: #080908;
+}
+
+
+.servicos-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.servico {
+    position: relative;
+
+    padding: 38px 32px;
+
+    background-color: #0b0d0b;
+
+    border: 1px solid #1b241b;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+
+.servico:hover {
+    transform: translateY(-7px);
+
+    border-color: #718d69;
+
+    box-shadow:
+        0 0 20px rgba(168, 216, 158, 0.10),
+        0 0 45px rgba(168, 216, 158, 0.04);
+}
+
+.servico::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #8fca83;
+
+    opacity: 0.35;
+
+    box-shadow:
+        0 0 8px rgba(143, 202, 131, 0.5);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: 0.4s;
+}
+
+
+.servico:hover::before {
+    transform: scaleX(1);
+
+    opacity: 1;
+}
+
+
+.servico h3 {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+
+    color: #c0dfb8;
+
+    text-shadow:
+        0 0 8px rgba(192, 223, 184, 0.18);
+
+    transition: 0.3s;
+}
+
+.servico:hover h3 {
+    color: #d8f2d1;
+
+    text-shadow:
+        0 0 10px rgba(168, 216, 158, 0.35);
+}
+
+
+.servico p {
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #9da69d;
+}
+
+
+/* ========================================
+   PROJETOS
+======================================== */
+
+.projetos {
+    min-height: 500px;
+
+    padding: 110px 7%;
+
+    background-color: #050505;
+}
+
+/* ========================================
+   GALERIA DE PROJETOS
+======================================== */
+
+.projetos-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.projeto {
+    background-color: #0b0d0b;
+
+    border: 1px solid #1b241b;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+
+.projeto:hover {
+    transform: translateY(-8px);
+
+    border-color: #688861;
+
+    box-shadow:
+        0 0 25px rgba(168, 216, 158, 0.12),
+        0 0 50px rgba(168, 216, 158, 0.05);
+}
+
+
+/* IMAGEM */
+
+.projeto-imagem {
+    width: 100%;
+    height: 380px;
+
+    overflow: hidden;
+}
+
+
+.projeto-imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: 0.6s;
+}
+
+
+.projeto:hover .projeto-imagem img {
+    transform: scale(1.05);
+}
+
+
+/* INFORMAÇÕES */
+
+.projeto-info {
+    padding: 28px 30px 32px;
+}
+
+
+.projeto-info > span {
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.4);
+}
+
+
+.projeto-info h3 {
+    margin: 10px 0 12px;
+
+    font-size: 24px;
+
+    color: #ffffff;
+}
+
+
+.projeto-info p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #8f9890;
+}
+
+
+/* ========================================
+   SOBRE
+======================================== */
+
+.sobre {
+    padding: 120px 7%;
+
+    background-color: #090b09;
+
+    border-top: 1px solid #5f8f57;
+
+    box-shadow:
+        0 -1px 8px rgba(95, 143, 87, 0.25);
+}
+
+/* ========================================
+   SOBRE A EMPRESA
+======================================== */
+
+.sobre-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.sobre-texto {
+    max-width: 600px;
+}
+
+
+.sobre-label {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.4);
+}
+
+
+.sobre-texto h2 {
+    margin-bottom: 30px;
+
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 15px rgba(168, 216, 158, 0.18);
+}
+
+
+.sobre-texto p:not(.sobre-label) {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #9da69d;
+}
+
+
+/* DESTAQUES */
+
+.sobre-destaques {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.destaque {
+    padding: 25px 28px;
+
+    background-color: #0d100d;
+
+    border: 1px solid #1b241b;
+
+    transition: 0.3s;
+}
+
+
+.destaque:hover {
+    border-color: #718d69;
+
+    box-shadow:
+        0 0 20px rgba(168, 216, 158, 0.08);
+
+    transform: translateX(6px);
+}
+
+
+.destaque span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 25px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 10px rgba(168, 216, 158, 0.45);
+}
+
+
+.destaque h3 {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+
+    color: #ffffff;
+}
+
+
+.destaque p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #7f887f;
+}
+
+
+.sobre-conteudo {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.sobre-conteudo p {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #aeb5ad;
+}
+
+
+/* ========================================
+   CONTATO
+======================================== */
+
+.contato {
+    padding: 130px 20px;
+
+    text-align: center;
+
+    background-color: #050505;
+
+    border-top: 1px solid #5f8f57;
+
+    box-shadow:
+        0 -1px 8px rgba(95, 143, 87, 0.25);
+
+    position: relative;
+}
+
+
+.contato-conteudo {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+
+.contato-conteudo > p {
+    margin-bottom: 15px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 10px rgba(168, 216, 158, 0.4);
+}
+
+
+.contato h2 {
+    margin-bottom: 25px;
+
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 12px rgba(255, 255, 255, 0.15),
+        0 0 30px rgba(168, 216, 158, 0.18);
+}
+
+
+.contato span {
+    display: block;
+
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #aeb5ad;
+}
+
+/* BOTÕES DO CONTATO */
+
+.contato-botoes {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 55px;
+}
+
+/* LOCALIZAÇÃO */
+
+.contato-local {
+    padding-top: 30px;
+
+    border-top: 1px solid #1b241b;
+}
+
+
+.contato-local p {
+    margin-bottom: 8px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #71806f;
+}
+
+
+.contato-local strong {
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #c7cec5;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    padding: 70px 7% 30px;
+
+    background-color: #020302;
+
+    border-top: 1px solid #151a15;
+}
+
+
+.footer-conteudo {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+.footer-marca h3 {
+    font-size: 20px;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px rgba(168, 216, 158, 0.25);
+}
+
+
+.footer-marca span {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    color: #8fb68a;
+}
+
+
+.footer-instagram {
+    text-align: center;
+}
+
+
+.footer-instagram p {
+    margin-bottom: 10px;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #737b73;
+}
+
+
+.footer-instagram a {
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #a8d89e;
+
+    text-shadow:
+        0 0 8px rgba(168, 216, 158, 0.4);
+
+    transition: 0.3s;
+}
+
+
+.footer-instagram a:hover {
+    color: #d0efc9;
+
+    text-shadow:
+        0 0 15px rgba(168, 216, 158, 0.7);
+}
+
+
+.footer-info {
+    text-align: right;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #737b73;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 44px;
+    }
+
+    .servicos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-conteudo {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.sobre-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+}
+
+.sobre-texto {
+    max-width: 100%;
+
+    text-align: center;
+}
+
+.sobre-texto h2 {
+    font-size: 40px;
+}
+
+}
+
+
+@media (max-width: 600px) {
+
+    .banner {
+        min-height: 550px;
+    }
+
+    .banner h2 {
+        font-size: 36px;
+    }
+
+    .banner-conteudo > p:not(.subtitulo) {
+        font-size: 16px;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-secao h2 {
+        font-size: 32px;
+    }
+
+    .contato h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .projetos-container {
+    grid-template-columns: 1fr;
+}
+
+.projeto-imagem {
+    height: 300px;
+}
+
+}
+
+/* ========================================
+   WHATSAPP FLUTUANTE
+======================================== */
+
+.whatsapp-flutuante {
+    position: fixed;
+
+    left: 25px;
+    bottom: 25px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8fca83;
+    color: #071007;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 0;
+    
+    box-shadow:
+        0 0 12px rgba(143, 202, 131, 0.5),
+        0 0 30px rgba(143, 202, 131, 0.25);
+
+    z-index: 1000;
+
+    transition: 0.3s;
+}
+
+
+
+.whatsapp-flutuante:hover {
+    transform: scale(1.1);
+
+    background-color: #b5e5aa;
+
+    box-shadow:
+        0 0 18px rgba(181, 229, 170, 0.7),
+        0 0 40px rgba(181, 229, 170, 0.35);
+}
+
+/* ========================================
+   LINHAS VERDES ENTRE AS SEÇÕES
+======================================== */
+
+.servicos,
+.projetos,
+.sobre,
+.contato {
+    border-top: 1px solid #9fe58f;
+
+box-shadow:
+    0 0 5px #9fe58f,
+    0 0 15px rgba(159, 229, 143, 0.5),
+    0 0 30px rgba(159, 229, 143, 0.2);
+}
+
+/* ========================================
+   CARDS DE SERVIÇOS COMO LINKS
+======================================== */
+
+a.servico,
+a.servico:hover,
+a.servico:visited,
+a.servico:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========================================
+   LOGO DA EMPRESA
+======================================== */
+
+.logo img {
+    display: block;
+    width: 220px;
+    height: auto;
+    max-height: 75px;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+
+    .logo img {
+        width: 170px;
+        max-height: 65px;
+    }
+
+}
+
+.encomenda-logo img {
+    display: block;
+    width: 100px;
+    height: auto;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+
+    .encomenda-logo img {
+        width: 120px;
+        max-height: 55px;
+    }
+
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 230px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 170px;
+        height: 60px;
+    }
+
+    .logo img {
+        width: 195px !important;
+    }
+}
