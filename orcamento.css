@@ -1821,18 +1821,7 @@ footer {
     background-position: center;
 }
 
-.pagina-controle-pragas {
-    background-image:
-        linear-gradient(
-            to right,
-            rgba(3, 4, 3, 0.88),
-            rgba(3, 4, 3, 0.45)
-        ),
-        url("imagens/servico-controle-pragas.jpg");
 
-    background-size: cover;
-    background-position: center;
-}
 
 /* ========================================
    LOGO DA EMPRESA
