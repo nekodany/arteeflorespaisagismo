@@ -1,9 +1,9 @@
 const numeroWhatsApp = "554399961733";
 
-const botao = document.querySelector(".botao-enviar-encomenda");
+const formulario = document.getElementById("formulario-plantas");
 
-if (botao) {
-    botao.addEventListener("click", function (event) {
+if (formulario) {
+    formulario.addEventListener("submit", function (event) {
 
         event.preventDefault();
 
@@ -26,7 +26,7 @@ if (botao) {
         }
 
         if (planta === "") {
-            alert("Por favor, informe qual planta você deseja.");
+            alert("Por favor, informe qual planta você procura.");
             return;
         }
 
@@ -41,8 +41,8 @@ if (botao) {
             "WhatsApp: " + whatsapp + "\n" +
             "Planta desejada: " + planta + "\n" +
             "Quantidade: " + quantidade + "\n" +
-            "Tamanho: " + tamanho + "\n" +
-            "Forma de entrega: " + entrega + "\n\n" +
+            "Tamanho desejado: " + (tamanho || "Não informado") + "\n" +
+            "Local de entrega: " + (entrega || "Não informado") + "\n\n" +
             "Observações:\n" +
             (observacoes || "Nenhuma");
 
@@ -54,6 +54,6 @@ if (botao) {
             "?text=" +
             mensagemCodificada;
 
-        window.open(link, "_blank");
+        window.location.href = link;
     });
 }
