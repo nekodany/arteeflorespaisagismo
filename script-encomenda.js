@@ -1,59 +1,18 @@
-const numeroWhatsApp = "554399961733";
-
 const formulario = document.getElementById("formulario-plantas");
 
-if (formulario) {
-    formulario.addEventListener("submit", function (event) {
+formulario.addEventListener("submit", function(event) {
 
-        event.preventDefault();
+    event.preventDefault();
 
-        const nome = document.getElementById("nome").value.trim();
-        const whatsapp = document.getElementById("whatsapp").value.trim();
-        const planta = document.getElementById("planta").value.trim();
-        const quantidade = document.getElementById("quantidade").value.trim();
-        const tamanho = document.getElementById("tamanho").value.trim();
-        const entrega = document.getElementById("entrega").value.trim();
-        const observacoes = document.getElementById("observacoes").value.trim();
+    const nome = document.getElementById("nome").value;
+    const planta = document.getElementById("planta").value;
 
-        if (nome === "") {
-            alert("Por favor, informe seu nome.");
-            return;
-        }
+    const mensagem =
+        "Olá Fabiano! Vim pelo site da Arte & Flores Paisagismo. 🌿\n\n" +
+        "Nome: " + nome + "\n" +
+        "Planta que procuro: " + planta;
 
-        if (whatsapp === "") {
-            alert("Por favor, informe seu WhatsApp.");
-            return;
-        }
+    const link = "https://wa.me/554399961733?text=" + encodeURIComponent(mensagem);
 
-        if (planta === "") {
-            alert("Por favor, informe qual planta você procura.");
-            return;
-        }
-
-        if (quantidade === "") {
-            alert("Informe a quantidade desejada.");
-            return;
-        }
-
-        const texto =
-            "Olá! Vim pelo site da Arte & Flores Paisagismo e gostaria de fazer uma encomenda de plantas. 🌿\n\n" +
-            "Nome: " + nome + "\n" +
-            "WhatsApp: " + whatsapp + "\n" +
-            "Planta desejada: " + planta + "\n" +
-            "Quantidade: " + quantidade + "\n" +
-            "Tamanho desejado: " + (tamanho || "Não informado") + "\n" +
-            "Local de entrega: " + (entrega || "Não informado") + "\n\n" +
-            "Observações:\n" +
-            (observacoes || "Nenhuma");
-
-        const mensagemCodificada = encodeURIComponent(texto);
-
-        const link =
-            "https://wa.me/" +
-            numeroWhatsApp +
-            "?text=" +
-            mensagemCodificada;
-
-        window.location.href = link;
-    });
-}
+    window.open(link, "_blank");
+});
