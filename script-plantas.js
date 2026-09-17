@@ -401,13 +401,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         Exemplo:
 
-        const numeroWhatsApp = "5543999999999";
+        const numeroWhatsApp = "554399961733";
 
         NÃO coloque +, espaços, parênteses ou hífen.
         */
 
 
-        const numeroWhatsApp = "";
+        const numeroWhatsApp = "554399961733";
 
 
         if (numeroWhatsApp === "") {
